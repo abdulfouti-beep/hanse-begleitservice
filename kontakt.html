@@ -22,7 +22,7 @@
 <nav class="site-nav fixed top-0 w-full z-50 bg-primary border-b border-outline-variant">
 <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-[1440px] mx-auto">
 <a class="flex items-center gap-3" href="index.html">
-<img alt="Hanse Begleitservice Logo" class="h-11 w-auto object-contain rounded-md" src="hanse_begleitservice_logo.png"/>
+<img alt="Hanse Begleitservice Logo" class="h-11 w-auto object-contain rounded-md" src="assets/logo-icon.png"/>
 <span class="font-headline-md text-lg font-bold uppercase tracking-tight text-secondary-container leading-none">Hanse Begleitservice</span>
 </a>
 <div class="hidden md:flex items-center gap-lg">
@@ -84,15 +84,19 @@
 <!-- Contact Form -->
 <div class="md:col-span-7 bg-surface-container-lowest ghost-border rounded p-lg flex flex-col gap-md">
 <h3 class="font-headline-md text-headline-md text-primary border-b-2 border-primary pb-sm inline-block w-max">Anfrage senden</h3>
-<form action="mailto:info@hanse-begleitservice.de" class="flex flex-col gap-md" method="post" enctype="text/plain">
+<form class="flex flex-col gap-md ajax-form" data-success-message="Vielen Dank! Ihre Anfrage wurde erfolgreich versendet. Wir melden uns so schnell wie möglich bei Ihnen." id="kontakt-form">
+<input name="access_key" type="hidden" value="3651c38d-63a5-4c3b-b515-47a251ae7097"/>
+<input name="subject" type="hidden" value="Neue Kontaktanfrage über hanse-begleitservice.de"/>
+<input name="from_name" type="hidden" value="Hanse Begleitservice Website"/>
+<input class="hidden" name="botcheck" style="display:none" tabindex="-1" type="text"/>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
 <div class="flex flex-col gap-xs">
 <label class="font-label-caps text-label-caps text-primary uppercase" for="kontakt-name">Name / Firma</label>
-<input class="input-border p-3 bg-surface text-on-surface font-body-md input-active transition-all" id="kontakt-name" name="Name" placeholder="Ihr Name oder Ihre Firma" type="text"/>
+<input class="input-border p-3 bg-surface text-on-surface font-body-md input-active transition-all" id="kontakt-name" name="Name" placeholder="Ihr Name oder Ihre Firma" required="" type="text"/>
 </div>
 <div class="flex flex-col gap-xs">
 <label class="font-label-caps text-label-caps text-primary uppercase" for="kontakt-email">E-Mail</label>
-<input class="input-border p-3 bg-surface text-on-surface font-body-md input-active transition-all" id="kontakt-email" name="E-Mail" placeholder="kontakt@firma.de" type="email"/>
+<input class="input-border p-3 bg-surface text-on-surface font-body-md input-active transition-all" id="kontakt-email" name="E-Mail" placeholder="kontakt@firma.de" required="" type="email"/>
 </div>
 </div>
 <div class="flex flex-col gap-xs">
@@ -106,12 +110,12 @@
 </div>
 <div class="flex flex-col gap-xs">
 <label class="font-label-caps text-label-caps text-primary uppercase" for="kontakt-nachricht">Nachricht &amp; Routendetails</label>
-<textarea class="input-border p-3 bg-surface text-on-surface font-body-md input-active transition-all" id="kontakt-nachricht" name="Nachricht" placeholder="Bitte geben Sie Start, Ziel und Transportmaße an..." rows="5"></textarea>
+<textarea class="input-border p-3 bg-surface text-on-surface font-body-md input-active transition-all" id="kontakt-nachricht" name="Nachricht" placeholder="Bitte geben Sie Start, Ziel und Transportmaße an..." required="" rows="5"></textarea>
 </div>
 <button class="bg-secondary-container text-primary font-headline-md text-label-caps uppercase px-6 py-4 rounded hover:bg-secondary-fixed transition-colors shadow-[0_4px_10px_rgba(0,0,0,0.1)] self-start mt-sm" type="submit">
-                        Anfrage Absenden
-                    </button>
-<p class="text-xs text-on-surface-variant">Mit dem Absenden öffnet sich Ihr E-Mail-Programm mit einer vorausgefüllten Nachricht an uns.</p>
+<span class="btn-text">Anfrage Absenden</span>
+</button>
+<p class="text-xs text-on-surface-variant form-status" role="status"></p>
 </form>
 </div>
 
