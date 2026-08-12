@@ -145,4 +145,80 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+
+    /* ----------------------------------------------------------------------
+       6) Formulare direkt versenden (Web3Forms) — kein mailto, kein
+          Öffnen des E-Mail-Programms. Betrifft alle Formulare mit der
+          Klasse "ajax-form" (Kontakt- und Buchungsformular).
+       ---------------------------------------------------------------------- */
+    const ajaxForms = document.querySelectorAll('.ajax-form');
+
+    ajaxForms.forEach(form => {
+        const statusEl = form.querySelector('.form-status');
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const btnTextEl = submitBtn ? submitBtn.querySelector('.btn-text') : null;
+        const originalBtnText = btnTextEl ? btnTextEl.textContent : (submitBtn ? submitBtn.textContent : '');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Honeypot: falls ausgefüllt, handelt es sich um einen Bot
+            const honeypot = form.querySelector('input[name="botcheck"]');
+            if (honeypot && honeypot.value) {
+                return;
+            }
+
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.classList.add('opacity-70', 'cursor-not-allowed');
+                if (btnTextEl) {
+                    btnTextEl.textContent = 'Wird gesendet...';
+                } else {
+                    submitBtn.textContent = 'Wird gesendet...';
+                }
+            }
+            if (statusEl) {
+                statusEl.textContent = '';
+                statusEl.className = 'text-sm mt-4 form-status';
+            }
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: { 'Accept': 'application/json' },
+                    body: formData
+                });
+                const result = await response.json();
+
+                if (response.status === 200 && result.success) {
+                    form.reset();
+                    if (statusEl) {
+                        statusEl.textContent = form.dataset.successMessage || 'Vielen Dank! Ihre Anfrage wurde erfolgreich versendet.';
+                        statusEl.className = 'text-sm mt-4 form-status text-green-700 font-semibold';
+                    }
+                } else {
+                    throw new Error(result.message || 'Unbekannter Fehler beim Versand.');
+                }
+            } catch (err) {
+                console.error('Formular-Versand fehlgeschlagen:', err);
+                if (statusEl) {
+                    statusEl.textContent = 'Leider gab es ein Problem beim Senden. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an info@hanse-begleitservice.de.';
+                    statusEl.className = 'text-sm mt-4 form-status text-error font-semibold';
+                }
+            } finally {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('opacity-70', 'cursor-not-allowed');
+                    if (btnTextEl) {
+                        btnTextEl.textContent = originalBtnText;
+                    } else {
+                        submitBtn.textContent = originalBtnText;
+                    }
+                }
+            }
+        });
+    });
+
 });
