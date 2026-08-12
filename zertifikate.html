@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hansa Begleitservice - Zertifikate</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="js/tailwind-config.js"></script>
+<!-- Custom Styles -->
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col pt-20">
+
+<!-- TopNavBar -->
+<nav class="site-nav fixed top-0 w-full z-50 bg-primary border-b border-outline-variant">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-[1440px] mx-auto">
+<a class="flex items-center gap-2" href="index.html">
+<span class="material-symbols-outlined text-secondary-container text-3xl" style="font-variation-settings: 'FILL' 1;">shield</span>
+<span class="font-headline-md text-headline-md font-bold text-secondary-container uppercase tracking-tight">Hansa Begleitservice</span>
+</a>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-on-primary font-headline-md text-sm hover:text-secondary-container transition-colors" href="index.html#leistungen">LEISTUNGEN</a>
+<a class="text-on-primary font-headline-md text-sm hover:text-secondary-container transition-colors" href="fuhrpark.html">FUHRPARK</a>
+<a class="text-secondary-container border-b-2 border-secondary-container pb-1 font-headline-md text-sm" href="zertifikate.html">ZERTIFIKATE</a>
+<a class="text-on-primary font-headline-md text-sm hover:text-secondary-container transition-colors" href="kontakt.html">KONTAKT</a>
+</div>
+<a class="hidden md:flex items-center justify-center px-6 py-3 bg-secondary-container text-primary font-headline-md text-sm font-bold uppercase tracking-wider rounded hover:bg-secondary-fixed transition-colors" href="buchen.html">
+                BEGLEITUNG BUCHEN
+            </a>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Menü öffnen" class="md:hidden text-secondary-container p-2" id="mobile-menu-toggle">
+<span class="material-symbols-outlined text-3xl" id="mobile-menu-icon">menu</span>
+</button>
+</div>
+<div class="md:hidden hidden flex-col bg-primary border-t border-outline-variant" id="mobile-menu">
+<div class="flex flex-col px-margin-mobile py-sm gap-1">
+<a class="text-on-primary font-headline-md text-sm uppercase py-3 border-b border-white/10" href="index.html#leistungen">LEISTUNGEN</a>
+<a class="text-on-primary font-headline-md text-sm uppercase py-3 border-b border-white/10" href="fuhrpark.html">FUHRPARK</a>
+<a class="text-secondary-container font-headline-md text-sm uppercase py-3 border-b border-white/10" href="zertifikate.html">ZERTIFIKATE</a>
+<a class="text-on-primary font-headline-md text-sm uppercase py-3 border-b border-white/10" href="kontakt.html">KONTAKT</a>
+<a class="flex items-center justify-center mt-4 mb-2 px-6 py-3 bg-secondary-container text-primary font-headline-md text-sm font-bold uppercase tracking-wider rounded" href="buchen.html">
+                    BEGLEITUNG BUCHEN
+                </a>
+</div>
+</div>
+</nav>
+
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-8 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto w-full">
+<div class="mb-lg reveal-up active">
+<h1 class="font-display-lg text-display-lg text-primary mb-xs">Geprüfte Sicherheit.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Unsere Qualifikationen für Ihren sicheren Schwer- und Großraumtransport. Transparent, aktuell und behördlich anerkannt.</p>
+</div>
+
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter reveal-up">
+<!-- ISO Certification (Hero Module) -->
+<div class="md:col-span-8 bg-surface-container-lowest ghost-border rounded-lg overflow-hidden flex flex-col relative group">
+<div class="safety-stripe absolute top-0 left-0"></div>
+<div class="p-lg flex flex-col md:flex-row gap-lg items-start md:items-center h-full">
+<div class="w-full md:w-1/3 flex justify-center">
+<span class="material-symbols-outlined text-[80px] text-primary" style="font-variation-settings: 'FILL' 0;">workspace_premium</span>
+</div>
+<div class="w-full md:w-2/3">
+<div class="bg-primary-container text-on-primary-container inline-block px-3 py-1 rounded-sm mb-4 font-label-caps text-label-caps uppercase">Zertifizierung</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">ISO 9001:2015</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Qualitätsmanagementsystem für die Planung und Durchführung von Schwertransportbegleitungen. Regelmäßig auditiert durch unabhängige Prüfstellen.</p>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<span class="font-label-caps text-label-caps text-outline block mb-1">GÜLTIG BIS</span>
+<span class="font-data-mono text-data-mono text-primary">31.12.2025</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-outline block mb-1">REG. NR.</span>
+<span class="font-data-mono text-data-mono text-primary">DE-98765432</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- BF3 License -->
+<div class="md:col-span-4 bg-surface-container-lowest ghost-border rounded-lg overflow-hidden flex flex-col">
+<div class="bg-primary p-4 border-b border-surface-dim flex items-center justify-between">
+<span class="font-headline-md text-body-lg text-on-primary font-semibold">BF3/BF4 Zulassung</span>
+<span class="material-symbols-outlined text-secondary-container" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Staatliche Anerkennung für den Einsatz von Begleitfahrzeugen der Generationen 3 und 4 inkl. Wechselverkehrszeichen-Anlagen.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 border-t border-surface-dim pt-3">
+<span class="material-symbols-outlined text-secondary-container text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md">BASt geprüft</span>
+</li>
+<li class="flex items-center gap-3 border-t border-surface-dim pt-3">
+<span class="material-symbols-outlined text-secondary-container text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md">BSK Mitgliedschaft</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Personnel Qualifications -->
+<div class="md:col-span-6 bg-surface-container-lowest ghost-border rounded-lg overflow-hidden flex flex-col">
+<div class="p-8">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-2xl">badge</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Personalqualifikationen</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Unser gesamtes Fahrpersonal unterliegt strengen, regelmäßigen Weiterbildungspflichten.</p>
+<div class="space-y-4">
+<div class="flex justify-between items-center p-3 bg-surface rounded-sm ghost-border">
+<span class="font-body-md font-semibold">BF3-Berechtigungsausweis</span>
+<span class="bg-[#e9c400]/20 text-[#544600] px-2 py-1 rounded-sm font-label-caps text-[10px]">100% QUOTE</span>
+</div>
+<div class="flex justify-between items-center p-3 bg-surface rounded-sm ghost-border">
+<span class="font-body-md font-semibold">ADR-Bescheinigung (Gefahrgut)</span>
+<span class="bg-[#e9c400]/20 text-[#544600] px-2 py-1 rounded-sm font-label-caps text-[10px]">AKTUELL</span>
+</div>
+<div class="flex justify-between items-center p-3 bg-surface rounded-sm ghost-border">
+<span class="font-body-md font-semibold">Erste-Hilfe-Zertifizierung</span>
+<span class="bg-[#e9c400]/20 text-[#544600] px-2 py-1 rounded-sm font-label-caps text-[10px]">JÄHRLICH</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Insurance / Liability -->
+<div class="md:col-span-6 bg-primary text-on-primary rounded-lg overflow-hidden relative p-8">
+<div class="absolute -right-10 -bottom-10 opacity-10">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md text-secondary-container mb-4">Versicherungsschutz &amp; Haftung</h3>
+<p class="font-body-md text-body-md text-surface-dim mb-8">Umfassende Absicherung für alle durchgeführten Begleitmaßnahmen gemäß den gesetzlichen Bestimmungen.</p>
+<div class="grid grid-cols-2 gap-6 border-t border-surface-tint pt-6">
+<div>
+<span class="font-label-caps text-label-caps text-inverse-primary block mb-1">DECKUNGSSUMME</span>
+<span class="font-data-mono text-data-mono text-white text-lg">€ 10.000.000</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-inverse-primary block mb-1">VERSICHERER</span>
+<span class="font-body-md font-semibold text-white">Allianz Industrie</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-xl px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-primary text-secondary-container border-t border-outline-variant mt-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="text-headline-md font-headline-md font-bold text-secondary-container uppercase tracking-tight block mb-4">Hansa Begleitservice</span>
+<p class="font-body-md text-on-primary opacity-80 text-sm">Präzision und Sicherheit im Schwerlastverkehr.</p>
+</div>
+<div class="col-span-1 md:col-span-2 flex flex-wrap gap-x-8 gap-y-4 md:justify-center">
+<a class="font-body-md text-on-primary opacity-80 hover:opacity-100 hover:text-secondary-container transition-all focus:underline" href="#">Impressum</a>
+<a class="font-body-md text-on-primary opacity-80 hover:opacity-100 hover:text-secondary-container transition-all focus:underline" href="#">Datenschutz</a>
+<a class="font-body-md text-on-primary opacity-80 hover:opacity-100 hover:text-secondary-container transition-all focus:underline" href="#">AGB</a>
+<a class="font-body-md text-on-primary opacity-80 hover:opacity-100 hover:text-secondary-container transition-all focus:underline" href="kontakt.html">Notfall-Kontakt</a>
+</div>
+<div class="col-span-1 md:col-span-1 md:text-right">
+<p class="font-body-md text-on-primary opacity-80 text-sm">© 2024 Hansa Begleitservice GmbH. Alle Rechte vorbehalten.</p>
+</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

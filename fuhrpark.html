@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hanse Begleitservice - Fuhrpark</title>
+<link href="https://hanse-begleitservice.de/fuhrpark.html" rel="canonical"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="js/tailwind-config.js"></script>
+<!-- Custom Styles -->
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col pt-20">
+
+<!-- TopNavBar -->
+<nav class="site-nav fixed top-0 w-full z-50 bg-primary border-b border-outline-variant">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-[1440px] mx-auto">
+<a class="flex items-center gap-3" href="index.html">
+<img alt="Hanse Begleitservice Logo" class="h-11 w-auto object-contain rounded-md" src="hanse_begleitservice_logo.png"/>
+<span class="font-headline-md text-lg font-bold uppercase tracking-tight text-secondary-container leading-none">Hanse Begleitservice</span>
+</a>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-on-primary font-headline-md text-sm hover:text-secondary-container transition-colors" href="index.html#leistungen">LEISTUNGEN</a>
+<a class="text-secondary-container border-b-2 border-secondary-container pb-1 font-headline-md text-sm" href="fuhrpark.html">FUHRPARK</a>
+<a class="text-on-primary font-headline-md text-sm hover:text-secondary-container transition-colors" href="kontakt.html">KONTAKT</a>
+</div>
+<a class="hidden md:flex items-center justify-center px-6 py-3 bg-secondary-container text-primary font-headline-md text-sm font-bold uppercase tracking-wider rounded hover:bg-secondary-fixed transition-colors" href="buchen.html">
+                BEGLEITUNG BUCHEN
+            </a>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Menü öffnen" class="md:hidden text-secondary-container p-2" id="mobile-menu-toggle">
+<span class="material-symbols-outlined text-3xl" id="mobile-menu-icon">menu</span>
+</button>
+</div>
+<div class="md:hidden hidden flex-col bg-primary border-t border-outline-variant" id="mobile-menu">
+<div class="flex flex-col px-margin-mobile py-sm gap-1">
+<a class="text-on-primary font-headline-md text-sm uppercase py-3 border-b border-white/10" href="index.html#leistungen">LEISTUNGEN</a>
+<a class="text-secondary-container font-headline-md text-sm uppercase py-3 border-b border-white/10" href="fuhrpark.html">FUHRPARK</a>
+<a class="text-on-primary font-headline-md text-sm uppercase py-3 border-b border-white/10" href="kontakt.html">KONTAKT</a>
+<a class="flex items-center justify-center mt-4 mb-2 px-6 py-3 bg-secondary-container text-primary font-headline-md text-sm font-bold uppercase tracking-wider rounded" href="buchen.html">
+                    BEGLEITUNG BUCHEN
+                </a>
+</div>
+</div>
+</nav>
+
+<!-- Main Content -->
+<main class="flex-grow pt-8 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto w-full">
+<!-- Header Section -->
+<header class="mb-xl reveal-up active">
+<h1 class="font-display-lg text-display-lg text-primary mb-sm">UNSER FUHRPARK</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+                Wir sind auf die BF3-Begleitung von Schwer- und Großraumtransporten spezialisiert. Als junges Unternehmen bauen wir unseren Fuhrpark kontinuierlich aus – mit dem klaren Fokus auf Zuverlässigkeit, Sorgfalt und die Einhaltung aller gesetzlichen Vorgaben.
+            </p>
+</header>
+
+<!-- Content Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter reveal-up">
+<!-- BF3 Focus Card (Hero Module) -->
+<div class="md:col-span-8 bg-primary text-on-primary rounded-lg overflow-hidden relative p-lg lg:p-xl flex flex-col justify-center">
+<div class="absolute -right-10 -bottom-10 opacity-10">
+<span class="material-symbols-outlined text-[220px]" style="font-variation-settings: 'FILL' 1;">shield</span>
+</div>
+<div class="relative z-10">
+<div class="bg-secondary-container text-primary w-fit px-3 py-1 rounded-sm mb-4 font-label-caps text-label-caps uppercase">Unsere Spezialisierung</div>
+<h2 class="font-headline-lg text-headline-lg text-secondary-container mb-sm">Ausschließlich BF3-Begleitung</h2>
+<p class="font-body-md text-body-md text-inverse-primary max-w-xl">
+                        Wir konzentrieren uns bewusst auf die Begleitung der Klasse BF3 und bilden unser Personal entsprechend der geltenden BASt-Richtlinien aus. Diese Fokussierung erlaubt es uns, Ihnen von Anfang an volle Aufmerksamkeit und Zuverlässigkeit zu bieten.
+                    </p>
+</div>
+</div>
+<!-- Status Card -->
+<div class="md:col-span-4 bg-surface rounded-lg ghost-border p-md flex flex-col justify-center items-center text-center">
+<span aria-hidden="true" class="material-symbols-outlined text-display-lg text-primary mb-sm">verified_user</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">BF3-Qualifikation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Unser Fahrpersonal verfügt über die erforderliche BF3-Berechtigung gemäß den behördlichen Vorgaben.</p>
+</div>
+
+<!-- Personal Service -->
+<div class="md:col-span-6 bg-surface-container-highest rounded-lg overflow-hidden ghost-border flex flex-col">
+<div class="h-2 safety-banner-bg w-full"></div>
+<div class="p-lg flex flex-col gap-3">
+<span aria-hidden="true" class="material-symbols-outlined text-primary text-4xl mb-2">support_agent</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Persönlicher Kontakt</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Als junges Unternehmen sind wir direkt und unkompliziert erreichbar. Sie sprechen mit uns persönlich – ohne Umwege über eine große Dispositionszentrale.</p>
+</div>
+</div>
+<!-- Growth / Commitment -->
+<div class="md:col-span-6 bg-surface-container-highest rounded-lg overflow-hidden ghost-border flex flex-col">
+<div class="h-2 safety-banner-bg w-full"></div>
+<div class="p-lg flex flex-col gap-3">
+<span aria-hidden="true" class="material-symbols-outlined text-primary text-4xl mb-2">trending_up</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-xs">Kontinuierlicher Ausbau</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Wir erweitern unseren Fuhrpark schrittweise und investieren gezielt in Ausrüstung und Ausbildung, um unseren Service stetig zu verbessern.</p>
+</div>
+</div>
+<!-- Coverage -->
+<div class="md:col-span-12 bg-surface rounded-lg ghost-border p-lg flex flex-col md:flex-row items-center justify-between gap-md">
+<div class="flex items-center gap-md">
+<span aria-hidden="true" class="material-symbols-outlined text-primary text-4xl">map</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-xs">Einsatzgebiet</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Deutschlandweit im Einsatz für Ihre BF3-Begleitung.</p>
+</div>
+</div>
+<a class="inline-flex items-center justify-center px-8 py-4 bg-primary text-on-primary font-headline-md text-sm font-bold uppercase tracking-wider rounded hover:bg-opacity-90 transition-colors gap-2" href="buchen.html">
+                        BEGLEITUNG ANFRAGEN
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary text-secondary-container w-full py-xl px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter border-t border-outline-variant mt-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-headline-md font-headline-md font-bold text-secondary-container flex items-center gap-2 mb-sm">
+<img alt="Hanse Begleitservice Logo" class="h-8 w-auto object-contain rounded-md" src="hanse_begleitservice_logo.png"/>
+                Hanse
+            </div>
+<p class="text-on-primary opacity-80 text-sm">© 2026 Hanse Begleitservice.<br/>Alle Rechte vorbehalten.</p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-8 justify-start md:justify-end items-start pt-4">
+<a class="text-on-primary opacity-80 hover:opacity-100 hover:text-secondary-container transition-all" href="impressum.html">Impressum</a>
+<a class="text-on-primary opacity-80 hover:opacity-100 hover:text-secondary-container transition-all" href="datenschutz.html">Datenschutz</a>
+<a class="text-on-primary opacity-80 hover:opacity-100 hover:text-secondary-container transition-all" href="agb.html">AGB</a>
+<a class="text-on-primary opacity-80 hover:opacity-100 hover:text-secondary-container transition-all font-bold text-secondary-container" href="tel:+4917684595283">Notfall-Kontakt</a>
+</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

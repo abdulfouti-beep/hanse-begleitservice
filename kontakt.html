@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hanse Begleitservice - Kontakt</title>
+<link href="https://hanse-begleitservice.de/kontakt.html" rel="canonical"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="js/tailwind-config.js"></script>
+<!-- Custom Styles -->
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col pt-20">
+
+<!-- TopNavBar -->
+<nav class="site-nav fixed top-0 w-full z-50 bg-primary border-b border-outline-variant">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-[1440px] mx-auto">
+<a class="flex items-center gap-3" href="index.html">
+<img alt="Hanse Begleitservice Logo" class="h-11 w-auto object-contain rounded-md" src="hanse_begleitservice_logo.png"/>
+<span class="font-headline-md text-lg font-bold uppercase tracking-tight text-secondary-container leading-none">Hanse Begleitservice</span>
+</a>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-on-primary font-headline-md text-sm hover:text-secondary-container transition-colors" href="index.html#leistungen">LEISTUNGEN</a>
+<a class="text-on-primary font-headline-md text-sm hover:text-secondary-container transition-colors" href="fuhrpark.html">FUHRPARK</a>
+<a class="text-secondary-container border-b-2 border-secondary-container pb-1 font-headline-md text-sm" href="kontakt.html">KONTAKT</a>
+</div>
+<a class="hidden md:flex items-center justify-center px-6 py-3 bg-secondary-container text-primary font-headline-md text-sm font-bold uppercase tracking-wider rounded hover:bg-secondary-fixed transition-colors" href="buchen.html">
+                BEGLEITUNG BUCHEN
+            </a>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Menü öffnen" class="md:hidden text-secondary-container p-2" id="mobile-menu-toggle">
+<span class="material-symbols-outlined text-3xl" id="mobile-menu-icon">menu</span>
+</button>
+</div>
+<div class="md:hidden hidden flex-col bg-primary border-t border-outline-variant" id="mobile-menu">
+<div class="flex flex-col px-margin-mobile py-sm gap-1">
+<a class="text-on-primary font-headline-md text-sm uppercase py-3 border-b border-white/10" href="index.html#leistungen">LEISTUNGEN</a>
+<a class="text-on-primary font-headline-md text-sm uppercase py-3 border-b border-white/10" href="fuhrpark.html">FUHRPARK</a>
+<a class="text-secondary-container font-headline-md text-sm uppercase py-3 border-b border-white/10" href="kontakt.html">KONTAKT</a>
+<a class="flex items-center justify-center mt-4 mb-2 px-6 py-3 bg-secondary-container text-primary font-headline-md text-sm font-bold uppercase tracking-wider rounded" href="buchen.html">
+                    BEGLEITUNG BUCHEN
+                </a>
+</div>
+</div>
+</nav>
+
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-xl flex flex-col gap-lg">
+<!-- Header Section -->
+<header class="flex flex-col gap-sm reveal-up active">
+<h1 class="font-display-lg text-display-lg text-primary uppercase">Kontakt &amp; Disposition</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Wir sind für Sie erreichbar. Ob Notfall-Disposition, Routenplanung oder allgemeine Anfragen – wir kümmern uns persönlich um Ihr Anliegen.
+            </p>
+</header>
+
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter reveal-up">
+<!-- Emergency Contact Banner -->
+<div class="md:col-span-12 relative overflow-hidden rounded bg-surface-container-high ghost-border flex flex-col md:flex-row items-center justify-between p-lg gap-md">
+<div class="absolute top-0 left-0 right-0 h-2 hazard-stripe"></div>
+<div class="flex items-center gap-md z-10">
+<div class="bg-error text-on-error p-4 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">emergency</span>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary uppercase">Notfall-Disposition</h2>
+<p class="font-body-md text-on-surface-variant">Direkter Draht für sofortige Einsätze und Routenänderungen.</p>
+</div>
+</div>
+<div class="z-10">
+<a class="inline-flex items-center gap-sm bg-primary text-secondary-container font-headline-md text-headline-md px-8 py-4 rounded hover:bg-primary-container transition-colors" href="tel:+4917684595283">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">phone</span>
+                        +49 176 8459 5283
+                    </a>
+</div>
+</div>
+
+<!-- Contact Form -->
+<div class="md:col-span-7 bg-surface-container-lowest ghost-border rounded p-lg flex flex-col gap-md">
+<h3 class="font-headline-md text-headline-md text-primary border-b-2 border-primary pb-sm inline-block w-max">Anfrage senden</h3>
+<form action="mailto:info@hanse-begleitservice.de" class="flex flex-col gap-md" method="post" enctype="text/plain">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="flex flex-col gap-xs">
+<label class="font-label-caps text-label-caps text-primary uppercase" for="kontakt-name">Name / Firma</label>
+<input class="input-border p-3 bg-surface text-on-surface font-body-md input-active transition-all" id="kontakt-name" name="Name" placeholder="Ihr Name oder Ihre Firma" type="text"/>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-caps text-label-caps text-primary uppercase" for="kontakt-email">E-Mail</label>
+<input class="input-border p-3 bg-surface text-on-surface font-body-md input-active transition-all" id="kontakt-email" name="E-Mail" placeholder="kontakt@firma.de" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-caps text-label-caps text-primary uppercase" for="kontakt-betreff">Betreff</label>
+<select class="input-border p-3 bg-surface text-on-surface font-body-md input-active transition-all" id="kontakt-betreff" name="Betreff">
+<option>Begleitschutz BF3</option>
+<option>Streckenprüfung</option>
+<option>Genehmigungsservice</option>
+<option>Allgemeine Anfrage</option>
+</select>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-caps text-label-caps text-primary uppercase" for="kontakt-nachricht">Nachricht &amp; Routendetails</label>
+<textarea class="input-border p-3 bg-surface text-on-surface font-body-md input-active transition-all" id="kontakt-nachricht" name="Nachricht" placeholder="Bitte geben Sie Start, Ziel und Transportmaße an..." rows="5"></textarea>
+</div>
+<button class="bg-secondary-container text-primary font-headline-md text-label-caps uppercase px-6 py-4 rounded hover:bg-secondary-fixed transition-colors shadow-[0_4px_10px_rgba(0,0,0,0.1)] self-start mt-sm" type="submit">
+                        Anfrage Absenden
+                    </button>
+<p class="text-xs text-on-surface-variant">Mit dem Absenden öffnet sich Ihr E-Mail-Programm mit einer vorausgefüllten Nachricht an uns.</p>
+</form>
+</div>
+
+<!-- Info & Map Column -->
+<div class="md:col-span-5 flex flex-col gap-gutter">
+<!-- Office Details -->
+<div class="bg-primary text-on-primary rounded p-lg flex flex-col gap-md relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 opacity-10">
+<span class="material-symbols-outlined text-9xl" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-secondary-container">Zentrale</h3>
+<div class="flex flex-col gap-sm relative z-10">
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary-container mt-1" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<div>
+<p class="font-label-caps text-label-caps text-inverse-primary uppercase">Standort</p>
+<p class="font-body-md">Eutiner Straße 47A<br/>23554 Lübeck<br/>Deutschland</p>
+</div>
+</div>
+<div class="flex items-start gap-sm mt-sm">
+<span class="material-symbols-outlined text-secondary-container mt-1" style="font-variation-settings: 'FILL' 1;">mail</span>
+<div>
+<p class="font-label-caps text-label-caps text-inverse-primary uppercase">E-Mail</p>
+<a class="font-body-md hover:text-secondary-container transition-colors" href="mailto:info@hanse-begleitservice.de">info@hanse-begleitservice.de</a>
+</div>
+</div>
+<div class="flex items-start gap-sm mt-sm">
+<span class="material-symbols-outlined text-secondary-container mt-1" style="font-variation-settings: 'FILL' 1;">call</span>
+<div>
+<p class="font-label-caps text-label-caps text-inverse-primary uppercase">Telefon</p>
+<a class="font-body-md hover:text-secondary-container transition-colors" href="tel:+4917684595283">+49 176 8459 5283</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Map (privacy-friendly: loads only after click) -->
+<div class="bg-surface-container-high ghost-border rounded h-64 relative overflow-hidden flex items-center justify-center" id="map-container">
+<button class="absolute inset-0 w-full h-full flex flex-col items-center justify-center gap-2 group cursor-pointer bg-surface-container-high" id="map-load-button" type="button">
+<span class="material-symbols-outlined text-primary text-5xl group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">map</span>
+<span class="font-label-caps text-label-caps text-primary uppercase">Eutiner Straße 47A, 23554 Lübeck</span>
+<span class="bg-primary text-secondary-container font-label-caps uppercase px-4 py-2 rounded shadow-sm mt-2">Karte laden</span>
+</button>
+</div>
+<p class="text-xs text-on-surface-variant">Beim Laden der Karte wird eine Verbindung zu Google Maps hergestellt. Mehr dazu in unserer <a class="underline hover:text-primary" href="datenschutz.html">Datenschutzerklärung</a>.</p>
+</div>
+</div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary border-t border-outline-variant w-full py-xl px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter mt-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="text-headline-md font-headline-md font-bold text-secondary-container uppercase">Hanse Begleitservice</span>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-md justify-start md:justify-end items-center">
+<a class="font-body-md text-body-md text-on-primary opacity-80 hover:opacity-100 hover:text-secondary-container transition-all focus:underline" href="impressum.html">Impressum</a>
+<a class="font-body-md text-body-md text-on-primary opacity-80 hover:opacity-100 hover:text-secondary-container transition-all focus:underline" href="datenschutz.html">Datenschutz</a>
+<a class="font-body-md text-body-md text-on-primary opacity-80 hover:opacity-100 hover:text-secondary-container transition-all focus:underline" href="agb.html">AGB</a>
+<a class="font-body-md text-body-md text-on-primary opacity-80 hover:opacity-100 hover:text-secondary-container transition-all focus:underline" href="tel:+4917684595283">Notfall-Kontakt</a>
+</div>
+<div class="col-span-1 md:col-span-4 mt-lg md:mt-0 md:text-right">
+<p class="font-body-md text-body-md text-on-primary opacity-50 text-sm">© 2026 Hanse Begleitservice. Alle Rechte vorbehalten.</p>
+</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
